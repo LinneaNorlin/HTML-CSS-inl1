@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+:root {
+    --title-color: #363636;
+    --grey-text: #626262;
+    --light-text: #F3FBFF;
+    --blue-color: #2BAAEC;
+    --green-color: #25E6C8;
+    --placehold-grey: #DEDEDE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/* sätter vidd 75% för detta är desktop, om gör mobil sätt 100% först och ändra för desktopgränserna... */
+.container {
+    width: 75%;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn-primary {
+    background-color: var(--green-color);
+    color: var(--light-text);
+}
+.btn-primary:hover {
+    background-color: var(--blue-color);
+    color: #ffffff;
+}
+.btn-secondary {
+    background-color: #ffffff;
+    color: var(--blue-color);
+}
+.btn-secondary:hover {
+    background-color: #2ba8ecda;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Top menu */
+.top-nav {
+    font-size: 1rem;
+    padding: 1rem 0;
+    align-content: center;
+}
+.bg-light {
+    background-color: #fff;
+    color: var(--grey-text);
+    border: 1px solid #707070;
+}
+.top-icon {
+    color: var(--blue-color);
+}
+.p-r {
+    padding-right: .5rem;
+}
+.p-l {
+    padding-left: 1rem;
+}
+.top-nav a:hover {
+    color: var(--green-color);
+}
+
+/* Main menu */
+.main-nav {
+    padding: 3.5rem 0;
+}
+.logo-link img {
+    height: 5rem;
+}
+.nav-link {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    color: var(--title-color);
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+/* Showcase */
+#showcase {
+    background-color: var(--placehold-grey);
+    padding-top: 1rem;
+}
+#showcase img {
+    margin-bottom: -.5rem;
+    margin-left: -3rem;
+}
+/* Detta behöver ändras, gör grid? Hur funkar flex:1 (*2, vänster resp höger)?*/
+.w-50 {
+    width: 50%;
+}
+.showcase-right {
+    text-align: left;
+    padding-right: 3.5rem;
+}
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.75rem;
+    color: var(--title-color);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.text {
+    font-size: 1.125rem;
+    color: var(--grey-text);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Appointment */
+.appointment {
+    /* Hur gör man exakt 80% opacity på blå färgen? */
+    background-color: #2ba8ecda;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.875rem;
+    padding: 2.5rem 0;
+    align-content: center;
+}
+.appointment .btn-secondary:hover {
+    background-color: transparent;
+}
+/* Footer */
+    /* Hur gör man exakt 60% opacity på textfärgen? */
+.footer {
+    background-color: var(--blue-color);
+    padding-bottom: 1rem;
+}
+.footer p {
+    color: #f3fbffa2;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+.line {
+    border-top: 0.1px solid #ffffffa1;
+}
